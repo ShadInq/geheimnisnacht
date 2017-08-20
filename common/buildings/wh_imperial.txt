@@ -1147,14 +1147,14 @@ castle = {
 	# Nuln artillery foundry
 	ca_nuln_artillery_foundry = {
 		desc = ca_nuln_artillery_foundry_desc
-		trigger = {
-			TECH_CASTLE_CONSTRUCTION = 4
-		}
-		prerequisites = {
-			ca_army_academy_1
-		}
+		# trigger = {
+			# TECH_CASTLE_CONSTRUCTION = 4
+		# }
+		# prerequisites = {
+			# ca_army_academy_1
+		# }
 		potential = {
-			province_id = 309
+			province_id = 309 # Nuln
 			FROM = {
 				OR = {
 					culture_group = imperial_group
@@ -1162,9 +1162,10 @@ castle = {
 				}
 			}
 			culture_group = imperial_group			
-		} # Nuln
+		}
 		gold_cost = 2000
 		build_time = 2065
+		black_knights = 100
 		artillery = 20
 		extra_tech_building_start = 0.8
 	}
